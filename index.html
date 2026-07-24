@@ -21,12 +21,26 @@
     </style>
 
 </head>
-<body class="min-h-screen w-full bg-linear-to-tr from-black via-zinc-900 to-zinc-800 text-slate-100 bg-size-[200%_200%] animate-[gradient-shift_7s_ease_infinite] bg-fixed transition-[background-position] pb-100">
+<body class="min-h-screen w-full bg-linear-to-tr from-black via-zinc-950 to-zinc-600 text-slate-100 bg-size-[200%_200%] animate-[gradient-shift_7s_ease_infinite] bg-fixed transition-[background-position] pb-100">
+    <nav class="h-15 border-b flex gap-7 align-center font-['Pacifico',cursive]">
+        <div class="basis-1/2">
+             <div class="w-10 h-10">
+                <img src="./images/lawl sprite.png" class="rounded-full m-2 ease-in-out hover:scale-120 hover:rotate-400 duration-700">
+             </div>
+        </div>
+       
+        <div class="basis-1/2 flex gap-15 justify-end mr-10 self-center">
+             <div>Skills</div>
+            <div>Projects</div>
+            <div>Contact</div>
+        </div>
+       
+
+    </nav>
+    
     <div class="flex flex-col justify-center items-center">
         <main class="w-screen h-125 p-5 flex relative">
-            <div class="absolute w-15 h-15 top-2 left-3">
-                <img src="./images/lawl sprite.png" class="rounded-full m-2 ease-in-out hover:scale-120 hover:rotate-400 duration-700">
-            </div>
+            
             <div class="w-300 h-80 ml-30 mt-20 flex justify-center rounded-full align-center">
                 <img src="./images/itachiyuv.gif" class="rounded-full m-1 ring-2 ring-amber-100 drop-shadow-xl drop-shadow-amber-50 hover:-translate-y-0.5 hover:drop-shadow-red-500 hover:drop-shadow-2xl ease-in-out transition duration-400">
             </div>
@@ -38,14 +52,25 @@
             </div>
         </main> 
 
-        <div class="flex flex-col gap-5 w-300 h-70 bg-zinc-900 rounded-xl text-white border-2 border-cyan-100 p-3 shadow-md shadow-cyan-100 hover:shadow-cyan-200 hover:border-cyan-200">
+        <div class="flex flex-col gap-5 w-300 h-90 bg-zinc-900 rounded-xl text-white border-2 border-cyan-100 p-3 shadow-md shadow-cyan-100 hover:shadow-cyan-200 hover:border-cyan-200">
             <section class="font-['Pacifico',cursive] font-bold underline underline-offset-3 text-2xl">
                 My Skills
             </section>
-            <section class="flex flex-col gap-6  text-xl ml-4">
-               <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200">Frontend</button>
-               <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200">Backend</button>
-               <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200">BasS</button>
+            <section class="flex flex-col gap-6  text-xl">
+                <div class="flex gap-3">
+                    <img src="./images/arrow.png" class="h-20 w-19">
+                    <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200 mt-2">Frontend</button>
+                </div>
+               
+               <div class="flex gap-3">
+                    <img src="./images/arrow.png" class="h-20 w-19">
+                    <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200 mt-2">Backend</button>
+                </div>
+
+                <div class="flex gap-3">
+                    <img src="./images/arrow.png" class="h-20 w-19">
+                    <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200 mt-2">BasS</button>
+                </div>
 
             </section>
         </div>
@@ -61,12 +86,12 @@
 
             </section>
         </div>
-        <div class="relative w-24 h-24 text-red-600">
+        <!-- <div class="relative w-24 h-24 text-red-600">
             <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full drop-shadow-sm">
-            <!-- A sketchy, organic curved arrow path -->
+         
             <path d="M20,20 C40,10 70,30 80,60 M80,60 L65,55 M80,60 L75,45" />
             </svg>
-        </div>
+        </div> -->
 
     </div>
     <script src="script.js"></script>
