@@ -9,33 +9,35 @@
      
       <!-- <link rel="stylesheet" href="./output.css"> -->
 </head>
-<body class="bg-zinc-950">
+<body class="min-h-screen w-full bg-linear-to-tr from-zinc-950 via-black to-zinc-800 text-slate-100 pb-100">
     <div class="flex flex-col justify-center items-center">
         <main class="w-screen h-125 p-5 flex relative">
             <div class="absolute w-15 h-15 top-2 left-3">
-                <img src="./images/lawl sprite.png" class="rounded-full m-2 duration-300 ease-in-out hover:scale-120 hover:rotate-400">
+                <img src="./images/lawl sprite.png" class="rounded-full m-2 ease-in-out hover:scale-120 hover:rotate-400 duration-700">
             </div>
             <div class="w-300 h-80 ml-30 mt-20 flex justify-center rounded-full align-center">
                 <img src="./images/itachiyuv.gif" class="rounded-full m-1 ring-2 ring-amber-100 drop-shadow-xl drop-shadow-amber-50 hover:-translate-y-0.5 hover:drop-shadow-red-500 hover:drop-shadow-2xl ease-in-out transition duration-400">
             </div>
 
-            <div class="text-green-200 w-900 h-80 mt-20 ml-20 flex justify-center text-4xl font-['Pacifico',cursive] flex-col space-y-3">
-                <h1>    I am Yuvraj    </h1> 
-                <div>    An aspiring Software Dev </div>
-                <div> ABCDEFGH AHFASHFJASB ASFJASF </div>
+            <div class="w-900 h-80 mt-20 ml-20 flex justify-center font-['Pacifico',cursive] flex-col space-y-4">
+                <h1 class="text-6xl text-white font-serif">    I am Yuvraj    </h1> 
+                <h2 class="text-3xl text-red-100">    An aspiring Software Dev </h2>
+                <!-- <div> ABCDEFGH AHFASHFJASB ASFJASF </div> -->
             </div>
         </main> 
 
-        <div class="flex relative w-300 h-70 bg-zinc-900 rounded-xl justify-center items-center text-white border-2">
-            <section class="absolute top-3 left-3 font-['Pacifico',cursive] font-bold underline underline-offset-3">
+        <div class="flex flex-col gap-5 w-300 h-70 bg-zinc-900 rounded-xl text-white border-2 border-zinc-500 p-3">
+            <section class="font-['Pacifico',cursive] font-bold underline underline-offset-3 text-2xl">
                 My Skills
             </section>
-            <section class="font-Arial">
-                <ul>
-                    
-                </ul>
+            <section class="flex flex-col gap-6  text-xl ml-4">
+               <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200">Frontend</button>
+               <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200">Backend</button>
+               <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200">BasS</button>
+
             </section>
         </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
