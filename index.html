@@ -6,10 +6,22 @@
     <title>Fortpolio
     </title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     
-      <!-- <link rel="stylesheet" href="./output.css"> -->
+     <style>
+        @keyframes gradient-shift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+
 </head>
-<body class="min-h-screen w-full bg-linear-to-tr from-zinc-950 via-black to-zinc-800 text-slate-100 pb-100">
+<body class="min-h-screen w-full bg-linear-to-tr from-black via-zinc-900 to-zinc-800 text-slate-100 bg-size-[200%_200%] animate-[gradient-shift_7s_ease_infinite] bg-fixed transition-[background-position] pb-100">
     <div class="flex flex-col justify-center items-center">
         <main class="w-screen h-125 p-5 flex relative">
             <div class="absolute w-15 h-15 top-2 left-3">
@@ -26,7 +38,7 @@
             </div>
         </main> 
 
-        <div class="flex flex-col gap-5 w-300 h-70 bg-zinc-900 rounded-xl text-white border-2 border-zinc-500 p-3">
+        <div class="flex flex-col gap-5 w-300 h-70 bg-zinc-900 rounded-xl text-white border-2 border-cyan-100 p-3 shadow-md shadow-cyan-100 hover:shadow-cyan-200 hover:border-cyan-200">
             <section class="font-['Pacifico',cursive] font-bold underline underline-offset-3 text-2xl">
                 My Skills
             </section>
@@ -38,6 +50,24 @@
             </section>
         </div>
         
+        <div class="flex flex-col gap-5 w-300 h-70 bg-zinc-900 rounded-xl text-white mt-20 p-3 border-2 border-red-100 shadow-md shadow-red-100 hover:shadow-red-200 hover:border-red-200">
+            <section class="font-['Pacifico',cursive] font-bold underline underline-offset-3 text-2xl">
+                My Skills
+            </section>
+            <section class="flex flex-col gap-6  text-xl ml-4">
+               <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200">Frontend</button>
+               <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200">Backend</button>
+               <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200">BasS</button>
+
+            </section>
+        </div>
+        <div class="relative w-24 h-24 text-red-600">
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full drop-shadow-sm">
+            <!-- A sketchy, organic curved arrow path -->
+            <path d="M20,20 C40,10 70,30 80,60 M80,60 L65,55 M80,60 L75,45" />
+            </svg>
+        </div>
+
     </div>
     <script src="script.js"></script>
 </body>
