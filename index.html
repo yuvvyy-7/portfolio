@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortpolio
+    <title>Portfolio
     </title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <style>
@@ -113,20 +113,66 @@
             <section class="font-['Pacifico',cursive] font-bold underline underline-offset-3 text-2xl">
                 My Skills
             </section>
-            <section class="flex flex-col gap-6  text-xl">
+            <section class="flex flex-col gap-6  text-xl font-['Pacifico',cursive]">
                 <div class="flex gap-3">
                     <img src="./images/arrow.png" class="h-20 w-19">
-                    <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200 mt-2">Frontend</button>
+                    <div class="relative group inline-flex items-center">
+
+                        <!-- Main Button -->
+                         <button class="h-12 w-30 bg-yellow-200 rounded-md border-black border-2 shadow-md shadow-black text-black mt-2">Frontend</button>
+
+
+                        <!-- Expanding Thread -->
+                        <div
+                            class="absolute left-full top-1/2 -translate-y-1/2
+                                flex items-center
+                                opacity-0 invisible
+                                group-hover:opacity-100 group-hover:visible
+                                transition-all duration-500
+                                -translate-x-1
+                                group-hover:translate-x-0">
+
+                            <!-- Thread -->
+                            <div class="w-12 h-0.5 bg-white"></div>
+
+                            <!-- Skills -->
+                            <div class="flex gap-3">
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                HTML
+                            </button>
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-cyan-700 text-white
+                                            hover:scale-110 transition">
+                                CSS
+                            </button>
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-cyan-700 text-white
+                                            hover:scale-110 transition">
+                                JavaScript
+                            </button>
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-cyan-700 text-white
+                                            hover:scale-110 transition">
+                                React
+                            </button>
+
+                            </div>
+
+                        </div>
+
+                        </div>
                 </div>
                
                <div class="flex gap-3">
                     <img src="./images/arrow.png" class="h-20 w-19">
-                    <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200 mt-2">Backend</button>
+                    <button class="h-12 w-30 rounded-md bg-orange-400 text-black border-black border-2 shadow-md shadow-black mt-2">Backend</button>
                 </div>
 
                 <div class="flex gap-3">
                     <img src="./images/arrow.png" class="h-20 w-19">
-                    <button class="h-12 w-30 rounded-md border-zinc-400 border-2 shadow-md shadow-cyan-200 mt-2">BasS</button>
+                    <button class="h-12 w-30 rounded-md bg-green-400 text-black border-black border-2 shadow-md shadow-black mt-2">BasS</button>
                 </div>
 
             </section>
