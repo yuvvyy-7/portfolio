@@ -72,7 +72,7 @@
             <div class="w-900 h-80 mt-20 ml-20 flex justify-center font-['Pacifico',cursive] flex-col space-y-4">
                 <h1 class="text-6xl text-white font-['Playfair_Display',serif]">    I am Yuvraj    </h1> 
                 <h2 class="text-3xl text-zinc-100">    An aspiring Software Dev </h2>
-                <div class="mt-10 hover:scale-101 transition-all duration-200 h-20 w-65 rounded-md border-zinc-100 border-2 shadow-md shadow-gree n-300 p-2 flex flex-col font-serif">
+                <div class="mt-10 hover:scale-101 transition-all duration-200 h-20 w-65 rounded-md border-zinc-100 border-2 shadow-md shadow-zinc-300 p-2 flex flex-col font-serif">
                     <div class="flex gap-2">
                         <div class="border-4 rounded-full border-green-600 w-2 self-center"></div> 
                         <div class="underline underline-offset-3 text-zinc-200 font-['Pacifico',cursive]">
@@ -117,17 +117,19 @@
             
         </main> 
 
-        <div id="skill" class="flex flex-col gap-5 w-300 h-90 bg-zinc-900 rounded-xl text-white border-2 border-cyan-100 p-3 shadow-md shadow-cyan-100 hover:shadow-cyan-200 hover:border-cyan-200">
+        <div id="skill" class="flex flex-col gap-5 w-300 h-90 text-white">
             <section class="font-['Pacifico',cursive] font-bold underline underline-offset-3 text-2xl">
                 My Skills
             </section>
-            <section class="flex flex-col gap-6  text-xl font-['Pacifico',cursive]">
+            <section class="flex flex-col gap-6 ml-7 text-xl font-['Pacifico',cursive]">
                 <div class="flex gap-3">
                     <img src="./images/arrow.png" class="h-20 w-19">
                     <div class="relative group inline-flex items-center">
 
                         <!-- Main Button -->
-                         <button class="h-12 w-30 bg-yellow-200 rounded-md border-black border-2 shadow-md shadow-black text-black mt-2">Frontend</button>
+                         <button class="hover:shadow-xs hover:shadow-yellow-200 h-12 w-30 bg-yellow-200 rounded-md border-black border-2 shadow-md shadow-black text-black mt-2">
+                            Frontend
+                        </button>
 
 
                         <!-- Expanding Thread -->
@@ -137,7 +139,7 @@
                                 opacity-0 invisible
                                 group-hover:opacity-100 group-hover:visible
                                 transition-all duration-500
-                                -translate-x-1
+                                -translate-x-3
                                 group-hover:translate-x-0">
 
                             <!-- Thread -->
@@ -151,19 +153,24 @@
                                 HTML
                             </button>
 
-                            <button class="px-4 py-2 mt-2 rounded-lg bg-cyan-700 text-white
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
                                             hover:scale-110 transition">
                                 CSS
                             </button>
 
-                            <button class="px-4 py-2 mt-2 rounded-lg bg-cyan-700 text-white
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
                                             hover:scale-110 transition">
                                 JavaScript
                             </button>
 
-                            <button class="px-4 py-2 mt-2 rounded-lg bg-cyan-700 text-white
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
                                             hover:scale-110 transition">
                                 React
+                            </button>
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                Tailwind
                             </button>
 
                             </div>
@@ -175,24 +182,149 @@
                
                <div class="flex gap-3">
                     <img src="./images/arrow.png" class="h-20 w-19">
-                    <button class="h-12 w-30 rounded-md bg-orange-400 text-black border-black border-2 shadow-md shadow-black mt-2">Backend</button>
+                   <div class="relative group inline-flex items-center">
+
+                        <!-- Main Button -->
+                         <button class="hover:shadow-xs hover:shadow-orange-300 h-12 w-30 bg-orange-400 rounded-md border-black border-2 shadow-md shadow-black text-black mt-2">
+                            Backend
+                        </button>
+
+
+                        <!-- Expanding Thread -->
+                        <div
+                            class="absolute left-full top-1/2 -translate-y-1/2
+                                flex items-center
+                                opacity-0 invisible
+                                group-hover:opacity-100 group-hover:visible
+                                transition-all duration-500
+                                -translate-x-3
+                                group-hover:translate-x-0">
+
+                            <!-- Thread -->
+                            <div class="w-12 h-0.5 bg-white"></div>
+
+                            <!-- Skills -->
+                            <div class="flex gap-3">
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                Express
+                            </button>
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                Node
+                            </button>
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                API
+                            </button>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
                 <div class="flex gap-3">
                     <img src="./images/arrow.png" class="h-20 w-19">
-                    <button class="h-12 w-30 rounded-md bg-green-400 text-black border-black border-2 shadow-md shadow-black mt-2">BaaS</button>
+                   <div class="relative group inline-flex items-center">
+
+                        <!-- Main Button -->
+                         <button class="hover:shadow-xs hover:shadow-green-300 h-12 w-30 bg-green-400 rounded-md border-black border-2 shadow-md shadow-black text-black mt-2">
+                            BaaS
+                        </button>
+
+
+                        <!-- Expanding Thread -->
+                        <div
+                            class="absolute left-full top-1/2 -translate-y-1/2
+                                flex items-center
+                                opacity-0 invisible
+                                group-hover:opacity-100 group-hover:visible
+                                transition-all duration-500
+                                -translate-x-3
+                                group-hover:translate-x-0">
+
+                            <!-- Thread -->
+                            <div class="w-12 h-0.5 bg-white"></div>
+
+                            <!-- Skills -->
+                            <div class="flex gap-3">
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                Supabase
+                            </button>
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                Firebase
+                            </button>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
+                <div class="flex gap-3">
+                    <img src="./images/arrow.png" class="h-20 w-19">
+                   <div class="relative group inline-flex items-center">
+
+                        <!-- Main Button -->
+                         <button class="hover:shadow-xs hover:shadow-rose-300 h-12 w-30 bg-rose-400 rounded-md border-black border-2 shadow-md shadow-black text-black mt-2">
+                            Languages
+                        </button>
+
+
+                        <!-- Expanding Thread -->
+                        <div
+                            class="absolute left-full top-1/2 -translate-y-1/2
+                                flex items-center
+                                opacity-0 invisible
+                                group-hover:opacity-100 group-hover:visible
+                                transition-all duration-500
+                                -translate-x-3
+                                group-hover:translate-x-0">
+
+                            <!-- Thread -->
+                            <div class="w-12 h-0.5 bg-white"></div>
+
+                            <!-- Skills -->
+                            <div class="flex gap-3">
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                Python
+                            </button>
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                C
+                            </button>
+
+                            <button class="px-4 py-2 mt-2 rounded-lg bg-white text-black border-2 border-black
+                                            hover:scale-110 transition">
+                                C++
+                            </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
 
         
 
-        <div id="project" class="flex flex-col gap-5 w-300 h-100 mt-30">
+        <div id="project" class="flex flex-col gap-5 w-300 h-100 mt-50">
             <section class="font-['Pacifico',cursive] font-bold underline underline-offset-3 text-2xl text-white">
                 Projects
             </section>
-            <section class="flex flex-col gap-6  text-xl ml-4 relative">
+            <section class="flex flex-col gap-6  text-xl ml-7 relative">
                <div class="hover:scale-101 transition-all duration-200 h-50 w-250 rounded-md border-zinc-400 border-2 shadow-md shadow-yellow-200 p-4 flex flex-col font-serif">
                    <div class="underline underline-offset-7 text-yellow-200 font-mono">
                         Anime Cards Discord Bot — 100k+ Users | Discord.js, JavaScript
