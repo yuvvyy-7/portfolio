@@ -62,3 +62,49 @@ function lawlNoHover() {
     lawlText.classList.add('-translate-x-7');    
     renderLawlText();
 }
+
+
+
+// Array of phrases to rotate through
+        const phrases = ["Full Stack Development.", "Data Structures & Algorithms."];
+        
+        const textElement = document.getElementById("typing-text");
+        let phraseIndex = 0;
+        let characterIndex = 0;
+        let isDeleting = false;
+
+        function typeAnimation() {
+            const currentPhrase = phrases[phraseIndex];
+
+            if (isDeleting) {
+                // Remove a character
+                textElement.textContent = currentPhrase.substring(0, characterIndex - 1);
+                characterIndex--;
+            } else {
+                // Add a character
+                textElement.textContent = currentPhrase.substring(0, characterIndex + 1);
+                characterIndex++;
+            }
+
+            // Default typing speed
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            // Determine if the phrase is fully typed out
+            if (!isDeleting && characterIndex === currentPhrase.length) {
+                // Pause at the end of the phrase before deleting
+                typeSpeed = 2000; 
+                isDeleting = true;
+            } else if (isDeleting && characterIndex === 0) {
+                isDeleting = false;
+                // Move to the next phrase in the array
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                // Brief pause before starting to type the next word
+                typeSpeed = 500; 
+            }
+
+            // Recursively trigger the function with the updated speed
+            setTimeout(typeAnimation, typeSpeed);
+        }
+
+        // Initialize the animation when the DOM content is fully loaded
+        document.addEventListener("DOMContentLoaded", typeAnimation);
